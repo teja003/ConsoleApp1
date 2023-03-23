@@ -27,8 +27,9 @@ namespace ConsoleApp1
     }
     internal class Program
     {
-        public static void Main(string[] args)
+        public static void main(string[] args)
         {
+            /*
             // Exception Handling
             // handle the error with try, catch, finally
             // try block expect catch or final
@@ -57,6 +58,7 @@ namespace ConsoleApp1
             }finally { 
                 Console.WriteLine("Code inside Finally"); 
             }
+            */
             /*
             ConstructorAndDestructor cd1 = new ConstructorAndDestructor();
             cd1.CallMe();

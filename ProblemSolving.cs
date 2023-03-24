@@ -14,7 +14,7 @@ namespace ConsoleApp1
     
     internal class ProblemSolving
     {
-        public static void Main(string[] args)
+        public static void main(string[] args)
         {
             var duplicateEementsArr = new List<int>() { 1,1,2,3,4,4,5,6,7,7,8,9};
             int dupCount = FindDuplicateCount(duplicateEementsArr);

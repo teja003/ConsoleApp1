@@ -9,7 +9,7 @@ namespace ConsoleApp1
 {
     public class ChocolateMachine
     {
-        public List<string> chocolates = new List<string>() { "green", "blue", "pink"};
+        public List<string> chocolates = new List<string>();
         public void addChocolates(string color, int count)
         {
             for(int i = 0; i < count; i++)
@@ -52,18 +52,14 @@ namespace ConsoleApp1
         }
         public Dictionary<string,int> noOfChocolates()
         {
-             var chocos = new Dictionary<string,int>();
-            for (int i = 0;i < this.chocolates.Count; i++)
+             var res = new Dictionary<string,int>();
+            var chacoSet = this.chocolates.GroupBy(x => x);
+            foreach (var item in chacoSet)
             {
-                if (chocos.Count == 0)
-                {
-                    chocos.Add(this.chocolates[i], 1);
-                }else
-                {
-                    chocos[this.chocolates[i]] = chocos[this.chocolates[i]] + 1;
-                }
+                res.Add(item.Key, item.Count());
             }
-            return chocos;
+            
+            return res;
         }
         public void sortChocolateBasedOnCount()
         {
@@ -114,18 +110,21 @@ namespace ConsoleApp1
         public static void Main(string[] args)
         {
             ChocolateMachine cm = new ChocolateMachine();
-            cm.addChocolates("green", 1);
+           cm.addChocolates("green", 1);
             cm.addChocolates("yellow", 2);
-            cm.addChocolates("green", 3);
-            var removedchocos = cm.removeChocolates(2);
-            var dispensedChocos = cm.dispenseChocolates(2);
-            var dispenseGreen = cm.dispenseChocolatesOfColor(2,"green");
-            cm.sortChocolateBasedOnCount();
+              cm.addChocolates("green", 3);
+             var removedchocos = cm.removeChocolates(2);
+             var dispensedChocos = cm.dispenseChocolates(2);
+             var dispenseGreen = cm.dispenseChocolatesOfColor(2,"green");
+             cm.sortChocolateBasedOnCount();
             var noOfChocos = cm.noOfChocolates();
-            foreach (var item in noOfChocos)
-            {
-                Console.WriteLine($"{item.Key}:{item.Value} ");
-            }
+             foreach (var item in noOfChocos)
+             {
+                 Console.WriteLine($"{item.Key}:{item.Value} ");
+             }
+            
         }
     }
 }
+
+//

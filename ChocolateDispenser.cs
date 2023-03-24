@@ -107,7 +107,7 @@ namespace ConsoleApp1
     }
     internal class ChocolateDispenser
     {
-        public static void Main(string[] args)
+        public static void main(string[] args)
         {
             ChocolateMachine cm = new ChocolateMachine();
            cm.addChocolates("green", 1);

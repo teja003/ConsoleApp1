@@ -78,7 +78,66 @@ namespace ConsoleApp1
             {
                 Console.Write($"{charQueue.Dequeue()} ");
             }
+            Console.WriteLine();
+            // Linked List
+            var ll = new LinkedList<int>();
+            ll.AddLast(1);
+            ll.AddLast(2);
+            ll.AddLast(3);
+            ll.AddLast(4);
+            ll.AddLast(5);
+            ll.AddLast(2);
+            ll.AddLast(8);
+            ll.AddFirst(0);
+            LinkedListNode<int> node5 = ll.Find(5);
+            LinkedListNode<int> node8 = ll.Find(8);
+            ll.AddBefore(node8,7);
+            ll.AddAfter(node5, 6);
+            LinkedListNode<int> head = ll.First;
+            while (head.Next != null)
+            {
+                if (head.Value == 2)
+                {
+                    ll.AddBefore(head, 10);
+                }
+                head = head.Next;
 
+            }
+            foreach (var item in ll)
+            {
+                Console.Write($"{item} -> ");
+            }
+            Console.WriteLine("NULL");
+            // Dictionary
+            Dictionary<int, string> dict = new Dictionary<int, string>();
+            dict.Add(1, "Yuva");
+            dict.Add(2, "Cool");
+            dict.Add(3, "Good");
+            string nameInDict = dict[1];
+            Console.WriteLine(nameInDict);
+            foreach (var item in dict)
+            {
+                if (item.Value == "Cool")
+                {
+                    dict[item.Key] = "Cool!!";
+                }
+            }
+            foreach (var item in dict)
+            {
+                Console.WriteLine($"{item.Key} : {item.Value}");
+            }
+            Console.WriteLine();
+            //SortedDictionary
+            SortedDictionary<string, string> sortDict = new SortedDictionary<string, string>();
+            sortDict.Add("fname", "Yuvateja");
+            sortDict.Add("lname", "Reddy");
+            sortDict.Add("age", "21");
+            sortDict.Add("email", "yuvateja@gmail.com");
+            sortDict.Remove("age");
+            foreach (var item in sortDict)
+            {
+                Console.WriteLine($"{item.Key} : {item.Value}");
+            }
             /*
              * Own generic class and methods
             OwnGeneric<int> generic1 = new OwnGeneric<int>(1);

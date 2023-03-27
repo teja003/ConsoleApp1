@@ -1,0 +1,15 @@
+C:\Users\HP\Desktop\New folder\C#\ProblemSolving\obj\Debug\net6.0\ProblemSolving.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\New folder\C#\ProblemSolving\obj\Debug\net6.0\ProblemSolving.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\New folder\C#\ProblemSolving\obj\Debug\net6.0\ProblemSolving.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\New folder\C#\ProblemSolving\obj\Debug\net6.0\ProblemSolving.AssemblyInfo.cs
+C:\Users\HP\Desktop\New folder\C#\ProblemSolving\obj\Debug\net6.0\ProblemSolving.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\New folder\C#\ProblemSolving\bin\Debug\net6.0\ProblemSolving.exe
+C:\Users\HP\Desktop\New folder\C#\ProblemSolving\bin\Debug\net6.0\ProblemSolving.deps.json
+C:\Users\HP\Desktop\New folder\C#\ProblemSolving\bin\Debug\net6.0\ProblemSolving.runtimeconfig.json
+C:\Users\HP\Desktop\New folder\C#\ProblemSolving\bin\Debug\net6.0\ProblemSolving.dll
+C:\Users\HP\Desktop\New folder\C#\ProblemSolving\bin\Debug\net6.0\ProblemSolving.pdb
+C:\Users\HP\Desktop\New folder\C#\ProblemSolving\obj\Debug\net6.0\ProblemSolving.dll
+C:\Users\HP\Desktop\New folder\C#\ProblemSolving\obj\Debug\net6.0\refint\ProblemSolving.dll
+C:\Users\HP\Desktop\New folder\C#\ProblemSolving\obj\Debug\net6.0\ProblemSolving.pdb
+C:\Users\HP\Desktop\New folder\C#\ProblemSolving\obj\Debug\net6.0\ProblemSolving.genruntimeconfig.cache
+C:\Users\HP\Desktop\New folder\C#\ProblemSolving\obj\Debug\net6.0\ref\ProblemSolving.dll

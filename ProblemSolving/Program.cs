@@ -10,10 +10,53 @@ namespace ProblemSolving
             int[,] arr = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
             int col = 3;
             int row = 3;
-            //SpiralMatrix(arr, row, col);
+            SpiralMatrix(arr, row, col);
             int[] stockArr = { 7, 1, 5, 3, 6, 4 };
             MaxProfit(stockArr);
+            RotateMatrix(arr, row,col);
         }
+
+
+        public static void RotateMatrix(int[,] mat, int row, int col)
+        {
+            List<List<int>> res = new();
+            for (int i = 0; i < mat.GetLength(0); i++)
+            {
+                List<int> r = new();
+                for (int j = 0; j < mat.GetLength(1); j++)
+                {
+                    r.Add(mat[i, j]);
+                }
+                res.Add(r);
+            }
+
+            for (int i = 0; i < row; i++)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    (res[i][j], res[j][i]) = (res[j][i], res[i][j]);
+                }
+            }
+
+            for (int i = 0; i < row; i++)
+            {
+                for (int j = 0; j < col / 2; j++)
+                {
+                    int firstIdx = j, secondIdx = col - 1 - j;
+                    (res[i][firstIdx], res[i][secondIdx]) = (res[i][secondIdx], res[i][firstIdx]);
+                }
+            }
+
+            for (int i = 0; i < row; i++)
+            {
+                for (int j = 0; j < col; j++)
+                {
+                    Console.Write(res[i][j] + " ");
+                }
+                Console.WriteLine();
+            }
+        }
+
         public static void SpiralMatrix(int[,] arr, int row, int col)
         {
             int cr = 0;

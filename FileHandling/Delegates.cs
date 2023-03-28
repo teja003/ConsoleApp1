@@ -20,24 +20,9 @@
     {
         public static void Main(string[] args)
         {
-
-            List<Student> studentList = new List<Student>();
-            studentList.Add(new Student(){ Id=1,Name="Yuvateja",Age=22,Dept="CSE",Score=85});
-            studentList.Add(new Student() { Id = 2, Name = "Harish", Age = 19, Dept = "ECE", Score = 90 });
-            studentList.Add(new Student() { Id = 3, Name = "Siva", Age = 17, Dept = "CSE", Score = 85 });
-            studentList.Add(new Student() { Id = 4, Name = "Vinay", Age = 21, Dept = "EEE", Score = 95 });
-
-            foreach (var student in studentList)
-            {
-                Console.WriteLine($"{student.Id} Name: {student.Name}, Dept:{student.Dept}, Score:{student.Score}");
-            }
-            List<Student> newStudList = studentList.OrderBy(stud => stud.Age>=20).ToList();
-            Console.WriteLine();
-            foreach (var student in newStudList)
-            {
-                Console.WriteLine($"{student.Id} Name: {student.Name}, Age:{student.Age}, Dept:{student.Dept}, Score:{student.Score}");
-            }
-
+           // StudentHOF();
+            Func<int,int,int> addFn = (x, y) => x + y;
+            Console.WriteLine(addFn(100,100));
             delegateAddTwoInts d1 = AddTwoInts;
             Console.WriteLine(d1(10, 20));
             Console.WriteLine(d1.Invoke(20, 30));
@@ -90,6 +75,32 @@
             }
 
 
+        }
+        public static void StudentHOF()
+        {
+            List<Student> studentList = new List<Student>();
+            studentList.Add(new Student() { Id = 1, Name = "Yuvateja", Age = 22, Dept = "CSE", Score = 85 });
+            studentList.Add(new Student() { Id = 2, Name = "Harish", Age = 19, Dept = "ECE", Score = 90 });
+            studentList.Add(new Student() { Id = 3, Name = "Siva", Age = 17, Dept = "CSE", Score = 85 });
+            studentList.Add(new Student() { Id = 4, Name = "Vinay", Age = 21, Dept = "EEE", Score = 95 });
+
+            foreach (var student in studentList)
+            {
+                Console.WriteLine($"{student.Id} Name: {student.Name}, Dept:{student.Dept}, Score:{student.Score}");
+            }
+            List<Student> newStudList = studentList.OrderBy(stud => stud.Age).ToList();
+            //var newStudList = studentList.OrderBy(stud => stud.Age);
+            var ageGreaterThan20 = studentList.FindAll(stud => stud.Age > 20); // FindAlll === Where
+            var cseDeptStudents = studentList.Where(stud => stud.Dept.Equals("CSE") && stud.Age >= 20);
+            studentList.Sort((s1, s2) => s1.Age - s2.Age);
+            Console.WriteLine();
+            foreach (var student in cseDeptStudents)
+            {
+                Console.WriteLine($"{student.Id} Name: {student.Name}, Age:{student.Age}, Dept:{student.Dept}, Score:{student.Score}");
+            }
+            studentList.ForEach(stud => stud.Age += 1);
+            int cseCount = studentList.Count(stud => stud.Dept.Equals("CSE"));
+            Console.WriteLine(cseCount);
         }
         public static int AddTwoInts(int x, int y)
         {

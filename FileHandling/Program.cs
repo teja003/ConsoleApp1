@@ -11,7 +11,7 @@ namespace FileHandling
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static void main(string[] args)
         {
             string path = "C:\\Users\\HP\\Desktop\\New folder\\C#\\FileHandling\\file.txt";
             string data = "Hello! New Text data!!";

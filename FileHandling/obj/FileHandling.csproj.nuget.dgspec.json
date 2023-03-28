@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Desktop\\New folder\\C#\\FileHandling\\FileHandling.csproj": {}
+    "C:\\Users\\HP\\Desktop\\internship\\C#\\FileHandling\\FileHandling.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Desktop\\New folder\\C#\\FileHandling\\FileHandling.csproj": {
+    "C:\\Users\\HP\\Desktop\\internship\\C#\\FileHandling\\FileHandling.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Desktop\\New folder\\C#\\FileHandling\\FileHandling.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\internship\\C#\\FileHandling\\FileHandling.csproj",
         "projectName": "FileHandling",
-        "projectPath": "C:\\Users\\HP\\Desktop\\New folder\\C#\\FileHandling\\FileHandling.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\internship\\C#\\FileHandling\\FileHandling.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Desktop\\New folder\\C#\\FileHandling\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\internship\\C#\\FileHandling\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

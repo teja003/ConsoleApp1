@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\New folder\\C#\\ProblemSolving\\ProblemSolving.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\internship\\C#\\ProblemSolving\\ProblemSolving.csproj",
       "projectName": "ProblemSolving",
-      "projectPath": "C:\\Users\\HP\\Desktop\\New folder\\C#\\ProblemSolving\\ProblemSolving.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\internship\\C#\\ProblemSolving\\ProblemSolving.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\New folder\\C#\\ProblemSolving\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\internship\\C#\\ProblemSolving\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

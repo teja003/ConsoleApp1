@@ -18,7 +18,7 @@
     }
     internal class Delegates
     {
-        public static void Main(string[] args)
+        public static void main(string[] args)
         {
            // StudentHOF();
             Func<int,int,int> addFn = (x, y) => x + y;

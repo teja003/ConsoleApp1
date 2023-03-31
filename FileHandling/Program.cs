@@ -13,9 +13,9 @@ namespace FileHandling
     {
         public static void main(string[] args)
         {
-            string path = "C:\\Users\\HP\\Desktop\\New folder\\C#\\FileHandling\\file.txt";
+            string path = "C:\\Users\\HP\\Desktop\\internship\\C#\\FileHandling\\file.txt";
             string data = "Hello! New Text data!!";
-            FileInfo fi = new FileInfo("C:\\Users\\HP\\Desktop\\New folder\\C#\\FileHandling\\file2.txt");
+            FileInfo fi = new FileInfo("C:\\Users\\HP\\Desktop\\internship\\C#\\FileHandling\\file2.txt");
             if (fi.Exists )
             {
                 fi.Delete();

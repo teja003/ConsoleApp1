@@ -5,7 +5,7 @@ namespace ProblemSolving
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static void main(string[] args)
         {
             int[,] arr = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
             int col = 3;
